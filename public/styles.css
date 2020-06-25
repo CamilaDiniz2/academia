@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root{
-  --color-orange: rgb(34, 34, 33);
+  --color-header: rgb(34, 34, 33);
   --color-background : #7159c1;
 }
 
@@ -20,7 +20,7 @@ body{
 header{
   text-align: center;
   padding: 24px;
-  background-color: var(--color-orange);
+  background-color: var(--color-header);
   box-sizing: border-box;
 }
 
@@ -66,9 +66,9 @@ header{
 =======================
 */
 .card{
-  background-color: #ccc;
+  background-color: #ddd;
   width: 800px;
-  height: 400px;
+  min-height: 400px;
 
   margin: 64px auto;
 
@@ -83,9 +83,58 @@ header{
 @keyframes up{
   0%{
     opacity: 0;
-    transform: translateY(25px);
+    transform: translateY(50px);
   }
   100%{
     opacity: 1.0;
   }
+}
+
+/* Details */
+.details{
+  padding: 32px;
+}
+
+.details .item{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 16px 0;
+}
+
+.details .item:last-child{
+  border: none;
+}
+
+.details .item  div:nth-child(1),
+.details h3{
+  font-size: 14px;
+  line-height: 24px;
+  color: #777;
+  letter-spacing: 1px;
+}
+
+.details .item div:nth-child(2){
+  color: #444;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.details h3{
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--color-background);
+}
+
+.details .item div:nth-child(2) span{
+  padding: 8px 16px;
+  background-color: #826cc7;
+  border-radius: 20px;
+  color: #111;
+  font-size: 14px;
+  margin-right: 8px;
+
+  display: inline-block;
+  margin-top: 8px;
+
+  text-transform: uppercase;
 }

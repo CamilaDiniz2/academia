@@ -6,6 +6,7 @@
 # Índice
 - [Sobre](#-sobre)
 - [Desenvolvimento](#-desenvolvimento)
+- [Imagens](#-imagens)
 ---
 
 ## Sobre
@@ -18,9 +19,18 @@ A primeira parte consistiu em criar as rotas (instructores e members) no back-en
 
 <img src="public/images/header.png" />
 
+Em seguida, na rota Instructors foi criado um card contendo o avatar do professor e informações como nome, idade, sexo, data de filiação, modalidades que acompanha. As imagens que aparecem por enquanto são aleatórias tirdas do api da [Unsplash](https://source.unsplash.com/).
 
+<img src="public/images/card-instructor.png" />
 
+---
 
+### Imagens
+As imagens utilizadas neste projeto foram obtidas a partir das seguintes fontes:
+- [Unsplash](https://unsplash.com/)
+- [API da Unsplash](https://source.unsplash.com/)
+
+---
 
 Desenvolvido por ✨ Camila Almeida Diniz.
 <br/>
