@@ -1,0 +1,13 @@
+{
+  "instructors": [
+    {
+      "avatar_url": "http://rocketseat.combr",
+      "birth": 1115251200000,
+      "created_at": 1593177702372,
+      "id": 1,
+      "gender": "M",
+      "name": "Fulano",
+      "services": "Natação, Musculação"
+    }
+  ]
+}

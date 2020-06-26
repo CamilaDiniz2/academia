@@ -23,6 +23,10 @@ Em seguida, na rota Instructors foi criado um card contendo o avatar do professo
 
 <img src="public/images/card-instructor.png" />
 
+Em seguida foi desenvolvida a página para cadastro de novo instrutor.
+
+<img src="public/images/form.png" >
+
 ---
 
 ### Imagens

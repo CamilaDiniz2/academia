@@ -1,10 +1,12 @@
-const express  = require('express')
-const nunjucks = require('nunjucks')
-const routes   = require("./routes")
+const express     = require('express')
+const nunjucks    = require('nunjucks')
+const routes      = require("./routes")
 
 // cria o servidor e o executa
 const server = express()
 
+// faz funcionar o req.body
+server.use(express.urlencoded({ extended: true }))
 // configura para receber arquivos estáticos
 server.use(express.static('public'))
 
