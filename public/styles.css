@@ -17,12 +17,17 @@ body{
   color: #333;
 }
 
-header{
-  text-align: center;
+header .links{
   padding: 24px;
   background-color: var(--color-header);
   box-sizing: border-box;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
+
+
 
 .links a{
   position: relative;
@@ -30,10 +35,15 @@ header{
   color: #fff;
   text-decoration: none;
   letter-spacing: 1px;
+  align-items: center;
 }
 
 .links a + a{
-  margin-left: 64px;
+  margin-left: 2.5vw;
+}
+
+.links a + a + a{
+  margin-left: 25vw;
 }
 
 .links a:hover{
@@ -155,6 +165,7 @@ input{
   padding: 8px;
   border-radius: 5px;
   outline-color: var(--color-background);
+  outline-width: thin;
   color: var(--color-background);
   font-size: 16px;
   font-weight: bold;
@@ -177,11 +188,13 @@ input[type="radio"]{
   margin-right: 16px;
 }
 
-.button{
+.button,
+.botaoEditar{
   text-align: center;
 }
 
-button[type="submit"]{
+button[type="submit"],
+.edite{
   margin-top: 32px;
   padding: 8px 16px;
   border-radius: 4px;
@@ -195,7 +208,16 @@ button[type="submit"]{
   width: 70%;
 }
 
-button[type="submit"]:hover{
+.edite{
+  display: block;
+  margin: 16px auto;
+  box-sizing: border-box;  
+  text-decoration: none;
+}
+
+
+button[type="submit"]:hover,
+.edite:hover{
   width: 100%;
   transition: 400ms;
   font-size: 15px;

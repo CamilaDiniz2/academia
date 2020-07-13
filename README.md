@@ -33,6 +33,10 @@ Em seguida foi desenvolvida a página para cadastro de novo instrutor.
 As imagens utilizadas neste projeto foram obtidas a partir das seguintes fontes:
 - [Unsplash](https://unsplash.com/)
 - [API da Unsplash](https://source.unsplash.com/)
+- [Collection da Unsplash](https://unsplash.com/collections/8353395/gym)
+- Icons made by <a href="https://www.flaticon.com/authors/ultimatearm" title="ultimatearm">ultimatearm</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+- <a target="_blank" href="https://icons8.com/icons/set/gum-">Gym icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
 
 ---
 

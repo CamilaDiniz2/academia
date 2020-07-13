@@ -1,29 +1,29 @@
-const express     = require('express')
-const nunjucks    = require('nunjucks')
-const routes      = require("./routes")
+const express = require('express');
+const nunjucks = require('nunjucks');
+const routes = require('./routes');
 
 // cria o servidor e o executa
-const server = express()
+const server = express();
 
 // faz funcionar o req.body
-server.use(express.urlencoded({ extended: true }))
+server.use(express.urlencoded({ extended: true }));
 // configura para receber arquivos estáticos
-server.use(express.static('public'))
+server.use(express.static('public'));
 
 //Usar o que foi obtido do arquivo routes
-server.use(routes)
+server.use(routes);
 
 // configura a template engine
-server.set("view engine", "njk")
+server.set('view engine', 'njk');
 
 //configura o nunjucks
-nunjucks.configure("views", {
-  express:server,
+nunjucks.configure('views', {
+  express: server,
   autoescape: false,
-  noCache: true
-})
+  noCache: true,
+});
 
 // inicializa o servidor
-server.listen(5000, function(){
-  console.log("server is running")
-})
+server.listen(5000, function () {
+  console.log('server is running');
+});
