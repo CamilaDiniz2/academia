@@ -20,8 +20,18 @@ routes.get('/instructors/:id/edit', instructors.edit);
 
 routes.post('/instructors', instructors.post);
 
+routes.put('/instructors', instructors.put);
+
+routes.delete('/instructors', instructors.delete);
+
 routes.get('/members', function (req, res) {
   return res.send('members');
 });
+
+// HTTP
+// GET: Receber
+// POST: gravar dados
+// PUT: atualizar
+// DELETE
 
 module.exports = routes;

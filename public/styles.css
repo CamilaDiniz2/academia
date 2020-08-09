@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-:root{
+:root {
   --color-header: rgb(34, 34, 33);
-  --color-background : #7159c1;
+  --color-background: #7159c1;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   border: 0;
   font-family: 'Roboto', sans-serif;
 }
 
-body{
+body {
   background-color: var(--color-background);
   color: #333;
 }
 
-header .links{
+header .links {
   padding: 24px;
   background-color: var(--color-header);
   box-sizing: border-box;
@@ -27,9 +27,7 @@ header .links{
   align-items: center;
 }
 
-
-
-.links a{
+.links a {
   position: relative;
   font-size: 24px;
   color: #fff;
@@ -38,24 +36,24 @@ header .links{
   align-items: center;
 }
 
-.links a + a{
+.links a + a {
   margin-left: 2.5vw;
 }
 
-.links a + a + a{
+.links a + a + a {
   margin-left: 25vw;
 }
 
-.links a:hover{
+.links a:hover {
   color: #7159c1;
 }
 
-.links a.active{
+.links a.active {
   font-weight: bold;
 }
 
 .links a::after {
-  content: "";
+  content: '';
   width: 0;
   height: 2px;
   background-color: var(--color-background);
@@ -75,13 +73,13 @@ header .links{
     instructors
 =======================
 */
-.card{
+.card {
   background-color: #ddd;
   width: 800px;
   min-height: 400px;
 
   margin: 64px auto;
-  border-radius: 16px;
+  border-radius: 8px;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -91,60 +89,61 @@ header .links{
   animation: up 1000ms ease;
 }
 
-@keyframes up{
-  0%{
+@keyframes up {
+  0% {
     opacity: 0;
     transform: translateY(50px);
   }
-  100%{
-    opacity: 1.0;
+  100% {
+    opacity: 1;
   }
 }
 
 /* Details */
-.details{
+.details {
   padding: 32px;
 }
 
-.avatar{
+.avatar {
   border-radius: 16px 0 0 16px;
 }
 
-.details .item{
+.details .item {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding: 16px 0;
 }
 
-.details .item:last-child{
+.details .item:last-child {
   border: none;
 }
 
-.details .item  div:nth-child(1),
-.details h3{
+.details .item div:nth-child(1),
+.details h3 {
   font-size: 14px;
   line-height: 24px;
   color: #777;
   letter-spacing: 1px;
 }
 
-.details .item div:nth-child(2){
+.details .item div:nth-child(2) {
   color: #444;
   font-weight: bold;
   font-size: 18px;
 }
 
-.details h3{
+.details h3 {
   font-size: 18px;
   text-transform: uppercase;
   font-weight: bold;
   color: var(--color-background);
 }
 
-.details .item div:nth-child(2) span{
+.details .item div:nth-child(2) span {
   padding: 8px 16px;
-  background-color: #826cc7;
-  border-radius: 20px;
-  color: #111;
+  background-color: #3c3ed4;
+  border: 2px solid var(--color-background);
+  border-radius: 4px;
+  color: #eee;
   font-size: 14px;
   margin-right: 8px;
 
@@ -160,7 +159,7 @@ header .links{
 ======================
 */
 
-input{
+input {
   width: 100%;
   padding: 8px;
   border-radius: 5px;
@@ -171,30 +170,30 @@ input{
   font-weight: bold;
 }
 
-input[type="date"],
+input[type='date'],
 input::placeholder {
   font-size: 14px;
   color: var(--color-background);
   opacity: 0.7;
 }
 
-.gender{
+.gender {
   text-align: center;
 }
 
-input[type="radio"]{
+input[type='radio'] {
   font-size: 16px;
   width: initial;
   margin-right: 16px;
 }
 
 .button,
-.botaoEditar{
+.botaoEditar {
   text-align: center;
 }
 
-button[type="submit"],
-.edite{
+button[type='submit'],
+.edite {
   margin-top: 32px;
   padding: 8px 16px;
   border-radius: 4px;
@@ -208,18 +207,25 @@ button[type="submit"],
   width: 70%;
 }
 
-.edite{
+.edite {
   display: block;
   margin: 16px auto;
-  box-sizing: border-box;  
+  box-sizing: border-box;
   text-decoration: none;
 }
 
-
-button[type="submit"]:hover,
-.edite:hover{
+button[type='submit']:hover,
+.edite:hover {
   width: 100%;
   transition: 400ms;
   font-size: 15px;
 }
 
+#form-delete button[type='submit'] {
+  background-color: rgb(248, 39, 39);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px auto;
+  text-transform: uppercase;
+}

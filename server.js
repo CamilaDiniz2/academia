@@ -1,6 +1,7 @@
 const express = require('express');
 const nunjucks = require('nunjucks');
 const routes = require('./routes');
+const methodOverride = require('method-override');
 
 // cria o servidor e o executa
 const server = express();
@@ -9,7 +10,8 @@ const server = express();
 server.use(express.urlencoded({ extended: true }));
 // configura para receber arquivos estáticos
 server.use(express.static('public'));
-
+// usa o methodOverride -> uso do delete e put no formulário
+server.use(methodOverride('_method'));
 //Usar o que foi obtido do arquivo routes
 server.use(routes);
 
