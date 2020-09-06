@@ -23,7 +23,7 @@ header .links {
   box-sizing: border-box;
 
   display: flex;
-  justify-content: start;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -34,6 +34,10 @@ header .links {
   text-decoration: none;
   letter-spacing: 1px;
   align-items: center;
+}
+
+.links a img {
+  width: 48px;
 }
 
 .links a + a {
@@ -228,4 +232,77 @@ button[type='submit']:hover,
   align-items: center;
   margin: 16px auto;
   text-transform: uppercase;
+}
+
+.index-instructor {
+  width: 80%;
+  background: var(--color-background);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+}
+
+.card-instructor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: #e4e0f3;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 2px #888;
+}
+
+.card-instructor img {
+  max-width: 80%;
+  max-height: 100px;
+  margin-right: 0.5rem;
+  opacity: 1;
+  margin-bottom: 1rem;
+}
+
+.instructor-information {
+  width: 75%;
+  margin-bottom: 1rem;
+}
+
+.instructor-information p {
+  text-align: start;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-background);
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #222;
+  text-align: center;
+}
+
+.action-buttons {
+  background-color: var(--color-background);
+  border-radius: 0.3rem;
+  width: 120px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-buttons a {
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  text-decoration: none;
+  text-align: center;
+  color: #f4f4f4;
+  padding: 1rem;
+}
+
+.action-buttons:hover {
+  width: 150px;
+  transition: 500ms;
 }

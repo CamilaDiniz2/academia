@@ -4,17 +4,21 @@
 <h1>
 
 # Índice
+
 - [Sobre](#-sobre)
 - [Desenvolvimento](#-desenvolvimento)
 - [Imagens](#-imagens)
+
 ---
 
 ## Sobre
+
 Atividade desenvolvida durante o Launchbase da Rocketseat, se trata de um controle de academia, onde temos instrutores e membros que podem ser cadastrados e também podem ter seus dados alterados.
 
 ---
 
 ## Desenvolvimento
+
 A primeira parte consistiu em criar as rotas (instructores e members) no back-end e o header no front-end com links para as rotas criadas.
 
 <img src="public/images/header.png" />
@@ -30,13 +34,15 @@ Em seguida foi desenvolvida a página para cadastro de novo instrutor.
 ---
 
 ### Imagens
+
 As imagens utilizadas neste projeto foram obtidas a partir das seguintes fontes:
+
 - [Unsplash](https://unsplash.com/)
 - [API da Unsplash](https://source.unsplash.com/)
 - [Collection da Unsplash](https://unsplash.com/collections/8353395/gym)
+  <a target="_blank" href="https://icons8.com/icons/set/cat-footprint">Cat Footprint icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 - Icons made by <a href="https://www.flaticon.com/authors/ultimatearm" title="ultimatearm">ultimatearm</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 - <a target="_blank" href="https://icons8.com/icons/set/gum-">Gym icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-
 
 ---
 

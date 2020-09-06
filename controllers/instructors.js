@@ -1,7 +1,12 @@
 const fs = require('fs');
-const data = require('./data.json');
-const { age, date } = require('./utils');
+const data = require('../data.json');
+const { age, date } = require('../utils');
 const Intl = require('intl');
+
+// index
+exports.index = function (req, res) {
+  return res.render('instructors/index', { instructors: data.instructors });
+};
 
 //Mostra um instrutor específico
 exports.show = function (req, res) {
@@ -24,6 +29,11 @@ exports.show = function (req, res) {
   };
 
   return res.render('instructors/show', { instructor });
+};
+
+// create
+exports.create = function (req, res) {
+  return res.render('members/create');
 };
 
 // Cria instrutor
@@ -111,6 +121,7 @@ exports.put = function (req, res) {
     ...foundInstructor,
     ...req.body,
     birth: Date.parse(req.body.birth),
+    id: Number(req.body.id),
   };
 
   data.instructors[index] = instructor;
